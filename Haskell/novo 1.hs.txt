@@ -1,0 +1,4 @@
+quad :: Int -> Int -> String
+quad a b 
+   | a == b = "quadrado"
+   | otherwise = "retangulo"

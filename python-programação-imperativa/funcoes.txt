@@ -1,0 +1,17 @@
+len()    = tamanho da lista
+append() = adiciona no final
+count()  = quantas vezes ocorre numalista 
+index()  = indice de uma lista(precisa de erro)
+insert( , ) = insere na posicao
+pop() = retira um valor de uma lista
+clear() = limpa lista
+sort()  = ordena lista
+sort(reverse=true) inverte lista
+copy() = copia lista
+''.join() = coloca no espaço
+[:] = cria copia
+
+dicionarios;
+keys()
+values()
+items()
