@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio do estudo de DOM em js</title>
+    <style>
+        body{
+            background-color: rgb(90, 209, 248);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inicio do estudo de DOM</h1>
+    <p>Aqui vai o resutado</p>
+    <p>aprende</p>
+    <div id="msg">click em min</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write(p1.innerText)
+        var d = document.querySelector('div#msg')
+        d.innerText = 'atualizado'
+        d.style.background ='blue'
+    </script>
+</body>
+</html>

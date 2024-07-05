@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            
+            background-color: aquamarine;
+
+        }
+        header{
+            background-color: aqua;
+            width: 100vw;
+            text-align: center;
+            padding-top: 20px;
+
+        }
+
+        nav{
+            text-align: left;
+            padding-top: 20px;
+            padding-bottom: 5px;
+
+        }
+        nav > a{
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.305);
+            background-color: rgba(26, 240, 240, 0.514);
+        }
+        nav > a:hover{
+            background-color: aquamarine;
+            color: rgb(0, 0, 0);
+        }
+        main{
+            
+            height: 100vh;
+            width: 50vh;
+            margin: auto;
+            background-color: white;
+            text-align: center;
+        }
+        p{
+            padding-top: 50px;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <H1>Sua Nacionalidade</H1>
+        <nav>
+            <a href="#">seu estado</a>
+            <a href="#">Seu pais</a>
+            <a href="#">sobre nos</a>
+        </nav>
+
+    </header>
+    <main>
+        <p>Digite seu país</p>
+        <input type="text" name="pais" id="pais" placeholder="digite seu pais">
+        <input type="button" value="confirmar" onclick="conf()">
+        <div id="res"></div>
+    </main>
+    <footer>
+        <p>Governo Federal do Brasil</p>
+    </footer>
+    <script>
+        function conf() {
+            d = document.getElementById('pais')
+            res = document.getElementById('res')
+            if (d.value == 'brasil' && d.value == 'brasileiro') {
+                res.innerText = `esse cidadão é ${brasileiro}`
+            } else {
+                res.innerText = `esse cidadão é ${d.value}`
+            }
+
+        }
+    </script>
+</body>
+</html>
